@@ -1,0 +1,13 @@
+services:
+  - type: web
+    name: neuroscan
+    runtime: python
+    plan: free
+    buildCommand: pip install --upgrade pip && pip install -r requirements.txt && python download_models.py
+    startCommand: gunicorn app:app -c gunicorn.conf.py
+    healthCheckPath: /health
+    envVars:
+      - key: PYTHON_VERSION
+        value: 3.11.11
+      - key: WEB_CONCURRENCY
+        value: "1"

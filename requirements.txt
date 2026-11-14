@@ -1,0 +1,12 @@
+# NeuroScan - pinned to the versions the saved model was trained with
+# (scikit-learn 1.6.1 + NumPy 2.x). Do not upgrade scikit-learn without
+# retraining, or the .pkl files may fail to load.
+Flask==3.1.0
+gunicorn==23.0.0
+numpy==2.2.6
+opencv-python-headless==4.11.0.86
+scikit-image==0.25.2
+scikit-learn==1.6.1
+scipy==1.15.2
+joblib==1.4.2
+Pillow==11.1.0
