@@ -3,6 +3,8 @@
 **Brain MRI tumor classification** — a Flask web app that classifies an MRI slice as
 **Glioma**, **Meningioma**, **Pituitary Tumor** or **No Tumor**.
 
+**Demo Link:** https://neuroscan-kwg9.onrender.com/
+
 Features are extracted with **HOG + LBP + GLCM** and classified by a **Support Vector Machine**.
 
 | Metric | Score |
